@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		A0DD312F2DFC8346009337BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0DD31152DFC8344009337BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0DD311C2DFC8344009337BD;
+			remoteInfo = ChatRewind;
+		};
+		A0DD31392DFC8346009337BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0DD31152DFC8344009337BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0DD311C2DFC8344009337BD;
+			remoteInfo = ChatRewind;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A0DD311D2DFC8344009337BD /* ChatRewind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatRewind.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0DD312E2DFC8346009337BD /* ChatRewindTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatRewindTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0DD31382DFC8346009337BD /* ChatRewindUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatRewindUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A0DD31402DFC8346009337BD /* Exceptions for "ChatRewind" folder in "ChatRewind" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A0DD311C2DFC8344009337BD /* ChatRewind */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		A0DD311F2DFC8344009337BD /* ChatRewind */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A0DD31402DFC8346009337BD /* Exceptions for "ChatRewind" folder in "ChatRewind" target */,
+			);
+			path = ChatRewind;
+			sourceTree = "<group>";
+		};
+		A0DD31312DFC8346009337BD /* ChatRewindTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ChatRewindTests;
+			sourceTree = "<group>";
+		};
+		A0DD313B2DFC8346009337BD /* ChatRewindUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ChatRewindUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0DD311A2DFC8344009337BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0DD312B2DFC8346009337BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0DD31352DFC8346009337BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A0DD31142DFC8344009337BD = {
+			isa = PBXGroup;
+			children = (
+				A0DD311F2DFC8344009337BD /* ChatRewind */,
+				A0DD31312DFC8346009337BD /* ChatRewindTests */,
+				A0DD313B2DFC8346009337BD /* ChatRewindUITests */,
+				A0DD311E2DFC8344009337BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A0DD311E2DFC8344009337BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0DD311D2DFC8344009337BD /* ChatRewind.app */,
+				A0DD312E2DFC8346009337BD /* ChatRewindTests.xctest */,
+				A0DD31382DFC8346009337BD /* ChatRewindUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0DD311C2DFC8344009337BD /* ChatRewind */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0DD31412DFC8346009337BD /* Build configuration list for PBXNativeTarget "ChatRewind" */;
+			buildPhases = (
+				A0DD31192DFC8344009337BD /* Sources */,
+				A0DD311A2DFC8344009337BD /* Frameworks */,
+				A0DD311B2DFC8344009337BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A0DD311F2DFC8344009337BD /* ChatRewind */,
+			);
+			name = ChatRewind;
+			packageProductDependencies = (
+			);
+			productName = ChatRewind;
+			productReference = A0DD311D2DFC8344009337BD /* ChatRewind.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A0DD312D2DFC8346009337BD /* ChatRewindTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0DD31462DFC8346009337BD /* Build configuration list for PBXNativeTarget "ChatRewindTests" */;
+			buildPhases = (
+				A0DD312A2DFC8346009337BD /* Sources */,
+				A0DD312B2DFC8346009337BD /* Frameworks */,
+				A0DD312C2DFC8346009337BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0DD31302DFC8346009337BD /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A0DD31312DFC8346009337BD /* ChatRewindTests */,
+			);
+			name = ChatRewindTests;
+			packageProductDependencies = (
+			);
+			productName = ChatRewindTests;
+			productReference = A0DD312E2DFC8346009337BD /* ChatRewindTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A0DD31372DFC8346009337BD /* ChatRewindUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0DD31492DFC8346009337BD /* Build configuration list for PBXNativeTarget "ChatRewindUITests" */;
+			buildPhases = (
+				A0DD31342DFC8346009337BD /* Sources */,
+				A0DD31352DFC8346009337BD /* Frameworks */,
+				A0DD31362DFC8346009337BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0DD313A2DFC8346009337BD /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A0DD313B2DFC8346009337BD /* ChatRewindUITests */,
+			);
+			name = ChatRewindUITests;
+			packageProductDependencies = (
+			);
+			productName = ChatRewindUITests;
+			productReference = A0DD31382DFC8346009337BD /* ChatRewindUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0DD31152DFC8344009337BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					A0DD311C2DFC8344009337BD = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					A0DD312D2DFC8346009337BD = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = A0DD311C2DFC8344009337BD;
+					};
+					A0DD31372DFC8346009337BD = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = A0DD311C2DFC8344009337BD;
+					};
+				};
+			};
+			buildConfigurationList = A0DD31182DFC8344009337BD /* Build configuration list for PBXProject "ChatRewind" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A0DD31142DFC8344009337BD;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A0DD311E2DFC8344009337BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0DD311C2DFC8344009337BD /* ChatRewind */,
+				A0DD312D2DFC8346009337BD /* ChatRewindTests */,
+				A0DD31372DFC8346009337BD /* ChatRewindUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0DD311B2DFC8344009337BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0DD312C2DFC8346009337BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0DD31362DFC8346009337BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0DD31192DFC8344009337BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0DD312A2DFC8346009337BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0DD31342DFC8346009337BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0DD31302DFC8346009337BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0DD311C2DFC8344009337BD /* ChatRewind */;
+			targetProxy = A0DD312F2DFC8346009337BD /* PBXContainerItemProxy */;
+		};
+		A0DD313A2DFC8346009337BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0DD311C2DFC8344009337BD /* ChatRewind */;
+			targetProxy = A0DD31392DFC8346009337BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A0DD31422DFC8346009337BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ChatRewind/ChatRewind.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChatRewind/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.soyfaii.ChatRewind;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A0DD31432DFC8346009337BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ChatRewind/ChatRewind.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChatRewind/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.soyfaii.ChatRewind;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A0DD31442DFC8346009337BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A0DD31452DFC8346009337BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		A0DD31472DFC8346009337BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.soyfaii.ChatRewindTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChatRewind.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChatRewind";
+			};
+			name = Debug;
+		};
+		A0DD31482DFC8346009337BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.soyfaii.ChatRewindTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChatRewind.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChatRewind";
+			};
+			name = Release;
+		};
+		A0DD314A2DFC8346009337BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.soyfaii.ChatRewindUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ChatRewind;
+			};
+			name = Debug;
+		};
+		A0DD314B2DFC8346009337BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.soyfaii.ChatRewindUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ChatRewind;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0DD31182DFC8344009337BD /* Build configuration list for PBXProject "ChatRewind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0DD31442DFC8346009337BD /* Debug */,
+				A0DD31452DFC8346009337BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0DD31412DFC8346009337BD /* Build configuration list for PBXNativeTarget "ChatRewind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0DD31422DFC8346009337BD /* Debug */,
+				A0DD31432DFC8346009337BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0DD31462DFC8346009337BD /* Build configuration list for PBXNativeTarget "ChatRewindTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0DD31472DFC8346009337BD /* Debug */,
+				A0DD31482DFC8346009337BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0DD31492DFC8346009337BD /* Build configuration list for PBXNativeTarget "ChatRewindUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0DD314A2DFC8346009337BD /* Debug */,
+				A0DD314B2DFC8346009337BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0DD31152DFC8344009337BD /* Project object */;
+}
