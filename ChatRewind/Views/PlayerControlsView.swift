@@ -21,21 +21,21 @@ struct PlayerControlsView: View {
                 Button {
                     currentPlayerPosition -= 10
                 } label: {
-                    Label("Play/Pause", systemImage: "backward")
+                    Label(String(localized: "Backward.button", defaultValue: "Backward"), systemImage: "backward")
                         .labelStyle(.iconOnly)
                 }
                 .controlSize(.large)
                 Button {
                     isPlaying.toggle()
                 } label: {
-                    Label(isPlaying ? "Pause" : "Play", systemImage: isPlaying ? "pause" : "play")
+                    Label(isPlaying ? String(localized: "Pause.button", defaultValue: "Pause") : String(localized: "Play.button", defaultValue: "Play"), systemImage: isPlaying ? "pause" : "play")
                             .labelStyle(.iconOnly)
                 }
                 .controlSize(.large)
                 Button {
                     currentPlayerPosition += 10
                 } label: {
-                    Label("Play/Pause", systemImage: "forward")
+                    Label(String(localized: "Forward.button", defaultValue: "Forward"), systemImage: "forward")
                         .labelStyle(.iconOnly)
                 }
                 .controlSize(.large)
