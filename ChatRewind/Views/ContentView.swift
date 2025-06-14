@@ -24,33 +24,42 @@ struct ContentView: View {
     }
     
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
             ScrollViewReader { proxy in
-                List {
-                    ForEach(globals.showPlayerControls ? displayedMessages : chatLog.messages, id: \.self) { message in
-                        MessageView(message: message)
-                            .id(message)
+                VStack(spacing: 0) {
+                    List {
+                        if let streamName = chatLog.streamName {
+                            StreamInfoView(streamName: streamName, channelName: chatLog.channelName)
+                                .opacity(0)
+                                .background(.background)
+                                .listRowInsets(EdgeInsets())
+                                .listRowSeparator(.hidden)
+                        }
+                        ForEach(globals.showPlayerControls ? displayedMessages : chatLog.messages, id: \.self) { message in
+                            MessageView(message: message)
+                                .id(message)
+                        }
                     }
-                }
-                .onAppear {
-                    if let lastMessage = (globals.showPlayerControls ? displayedMessages : chatLog.messages).last {
-                        proxy.scrollTo(lastMessage, anchor: .bottom)
-                    }
-                }
-                .onChange(of: globals.showPlayerControls ? displayedMessages : chatLog.messages) { oldValue, newValue in
-                    if let lastMessage = newValue.last {
-                        withAnimation {
+                    .onAppear {
+                        if let lastMessage = (globals.showPlayerControls ? displayedMessages : chatLog.messages).last {
                             proxy.scrollTo(lastMessage, anchor: .bottom)
                         }
                     }
-                }
-                .onReceive(Timer.publish(every: 1, on: .main, in: .common).autoconnect()) { _ in
-                    guard isPlaying else { return }
-                    if currentPosition < streamLength {
-                        currentPosition += 1
-                        refreshMessages()
-                    } else {
-                        isPlaying = false // stop when end is reached
+                    .onChange(of: globals.showPlayerControls ? displayedMessages : chatLog.messages) { oldValue, newValue in
+                        if let lastMessage = newValue.last {
+                            withAnimation {
+                                proxy.scrollTo(lastMessage, anchor: .bottom)
+                            }
+                        }
+                    }
+                    .onReceive(Timer.publish(every: 1, on: .main, in: .common).autoconnect()) { _ in
+                        guard isPlaying else { return }
+                        if currentPosition < streamLength {
+                            currentPosition += 1
+                            refreshMessages()
+                        } else {
+                            isPlaying = false // stop when end is reached
+                        }
                     }
                 }
             }
@@ -101,20 +110,7 @@ struct ContentView: View {
         }
         .overlay(alignment: .topLeading) {
             if let streamName = chatLog.streamName {
-                HStack {
-                    VStack(alignment: .leading) {
-                        Text(streamName)
-                            .font(.headline)
-                        if let channelName = chatLog.channelName {
-                            Text(channelName)
-                                .font(.subheadline)
-                        }
-                    }
-                    Spacer()
-                }
-                .padding()
-                .background(.ultraThinMaterial)
-                .border(.black, width: 1)
+                StreamInfoView(streamName: streamName, channelName: chatLog.channelName)
             }
         }
     }
