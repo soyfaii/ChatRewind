@@ -52,11 +52,13 @@ struct ContentView: View {
                             }
                         }
                     }
+                    .onChange(of: currentPosition, { _, _ in
+                        refreshMessages()
+                    })
                     .onReceive(Timer.publish(every: 1, on: .main, in: .common).autoconnect()) { _ in
                         guard isPlaying else { return }
                         if currentPosition < streamLength {
                             currentPosition += 1
-                            refreshMessages()
                         } else {
                             isPlaying = false // stop when end is reached
                         }
@@ -64,48 +66,7 @@ struct ContentView: View {
                 }
             }
             if globals.showPlayerControls {
-                VStack {
-                    HStack {
-                        Button {
-                            currentPosition -= 10
-                            refreshMessages()
-                        } label: {
-                            Label("Play/Pause", systemImage: "backward")
-                                .labelStyle(.iconOnly)
-                        }
-                        .controlSize(.large)
-                        Button {
-                            isPlaying.toggle()
-                            if (isPlaying) {
-                                
-                            } else {
-                                
-                            }
-                        } label: {
-                            Label(isPlaying ? "Pause" : "Play", systemImage: isPlaying ? "pause" : "play")
-                                    .labelStyle(.iconOnly)
-                        }
-                        .controlSize(.large)
-                        Button {
-                            currentPosition += 10
-                            refreshMessages()
-                        } label: {
-                            Label("Play/Pause", systemImage: "forward")
-                                .labelStyle(.iconOnly)
-                        }
-                        .controlSize(.large)
-                    }
-                    Slider(value: $currentPosition, in: (0...streamLength)) {} minimumValueLabel: {
-                        Text(Duration(secondsComponent: Int64(currentPosition), attosecondsComponent: 0).formatted())
-                    } maximumValueLabel: {
-                        Text(Duration(secondsComponent: Int64(streamLength), attosecondsComponent: 0).formatted())
-                    } onEditingChanged: { isEditing in
-                        if !isEditing {
-                            refreshMessages()
-                        }
-                    }
-                }
-                .padding()
+                PlayerControlsView(isPlaying: $isPlaying, currentPlayerPosition: $currentPosition, totalStreamLength: streamLength)
             }
         }
         .overlay(alignment: .topLeading) {
