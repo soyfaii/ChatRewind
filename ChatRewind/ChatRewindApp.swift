@@ -18,12 +18,18 @@ struct ChatRewindApp: App {
                     .environment(globals)
             }
         }
+        .windowLevel(globals.keepOnTop ? .floating : .normal)
         .commands {
             CommandGroup(before: .sidebar) {
                 Section {
                     Toggle(isOn: $globals.showPlayerControls) {
                         Label("Show Player Controls", systemImage: "play")
                     }
+                }
+            }
+            CommandGroup(after: .windowSize) {
+                Toggle(isOn: $globals.keepOnTop) {
+                    Text("Keep on Top")
                 }
             }
         }
@@ -33,4 +39,5 @@ struct ChatRewindApp: App {
 @Observable
 class Globals {
     var showPlayerControls = true
+    var keepOnTop = false
 }
