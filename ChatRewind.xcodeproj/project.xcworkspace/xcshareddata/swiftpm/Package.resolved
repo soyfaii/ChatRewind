@@ -1,5 +1,5 @@
 {
-  "originHash" : "dd327b5849fdf9cd37ed3fa70433f442ff2b13362f47df14127f4878649ff589",
+  "originHash" : "501a106a445764fd2830aa42a48639c13983989da07e8438e260e8b63462305b",
   "pins" : [
     {
       "identity" : "swiftcsv",
@@ -8,6 +8,15 @@
       "state" : {
         "revision" : "6ab5d0fe9b6ef3c79d717eefa70862df389e74d9",
         "version" : "0.10.0"
+      }
+    },
+    {
+      "identity" : "swiftseventv",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/soyfaii/swiftseventv",
+      "state" : {
+        "revision" : "4f5936122f5f8b5bfc789fc6c2eeb27c59072382",
+        "version" : "0.1.1"
       }
     }
   ],

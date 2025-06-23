@@ -23,6 +23,8 @@ struct ContentView: View {
         TimeInterval(chatLog.messages.last?.time ?? 0)
     }
     
+    @State private var isLoadingEmotes = false
+    
     var body: some View {
         VStack(spacing: 0) {
             ScrollViewReader { proxy in
@@ -36,7 +38,7 @@ struct ContentView: View {
                                 .listRowSeparator(.hidden)
                         }
                         ForEach(globals.showPlayerControls ? displayedMessages : chatLog.messages, id: \.self) { message in
-                            MessageView(message: message)
+                            MessageView(message: message, emotesReferenceChannel: chatLog.channelName ?? "")
                                 .id(message)
                         }
                     }
@@ -70,8 +72,31 @@ struct ContentView: View {
             }
         }
         .overlay(alignment: .topLeading) {
-            if let streamName = chatLog.streamName {
-                StreamInfoView(streamName: streamName, channelName: chatLog.channelName)
+            VStack(spacing: 0) {
+                if let streamName = chatLog.streamName {
+                    StreamInfoView(streamName: streamName, channelName: chatLog.channelName)
+                    Divider()
+                }
+                if isLoadingEmotes {
+                    ProgressView("Loading Emotes…")
+                        .progressViewStyle(.linear)
+                        .controlSize(.small)
+                        .padding(.horizontal)
+                        .padding(.vertical, 8)
+                        .background(.ultraThinMaterial)
+                    Divider()
+                }
+            }
+            .background(.ultraThinMaterial)
+            
+        }
+        .task {
+            withAnimation {
+                isLoadingEmotes = true
+            }
+            await SevenTVService.loadEmotes(forChannel: chatLog.channelName ?? "")
+            withAnimation {
+                isLoadingEmotes = false
             }
         }
     }

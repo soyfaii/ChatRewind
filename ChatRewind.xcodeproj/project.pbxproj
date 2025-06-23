@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A061D8642E0992AB00DC9E7D /* Secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A061D8632E0992AB00DC9E7D /* Secrets.xcconfig */; };
 		A0DD31542DFC8C81009337BD /* SwiftCSV in Frameworks */ = {isa = PBXBuildFile; productRef = A0DD31532DFC8C81009337BD /* SwiftCSV */; };
+		A0F025592DFF1E7E0006204F /* SwiftSevenTV in Frameworks */ = {isa = PBXBuildFile; productRef = A0F025582DFF1E7E0006204F /* SwiftSevenTV */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A061D8632E0992AB00DC9E7D /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
 		A0DD311D2DFC8344009337BD /* ChatRewind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatRewind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0DD312E2DFC8346009337BD /* ChatRewindTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatRewindTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0DD31382DFC8346009337BD /* ChatRewindUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatRewindUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0F025592DFF1E7E0006204F /* SwiftSevenTV in Frameworks */,
 				A0DD31542DFC8C81009337BD /* SwiftCSV in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,6 +97,7 @@
 		A0DD31142DFC8344009337BD = {
 			isa = PBXGroup;
 			children = (
+				A061D8632E0992AB00DC9E7D /* Secrets.xcconfig */,
 				A0DD311F2DFC8344009337BD /* ChatRewind */,
 				A0DD31312DFC8346009337BD /* ChatRewindTests */,
 				A0DD313B2DFC8346009337BD /* ChatRewindUITests */,
@@ -131,6 +136,7 @@
 			name = ChatRewind;
 			packageProductDependencies = (
 				A0DD31532DFC8C81009337BD /* SwiftCSV */,
+				A0F025582DFF1E7E0006204F /* SwiftSevenTV */,
 			);
 			productName = ChatRewind;
 			productReference = A0DD311D2DFC8344009337BD /* ChatRewind.app */;
@@ -217,6 +223,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				A0DD31522DFC8C81009337BD /* XCRemoteSwiftPackageReference "SwiftCSV" */,
+				A0F025572DFF1E7E0006204F /* XCRemoteSwiftPackageReference "swiftseventv" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A0DD311E2DFC8344009337BD /* Products */;
@@ -235,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A061D8642E0992AB00DC9E7D /* Secrets.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +354,7 @@
 		};
 		A0DD31442DFC8346009337BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A061D8632E0992AB00DC9E7D /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -410,6 +419,7 @@
 		};
 		A0DD31452DFC8346009337BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A061D8632E0992AB00DC9E7D /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -466,6 +476,7 @@
 		};
 		A0DD31472DFC8346009337BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A061D8632E0992AB00DC9E7D /* Secrets.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -578,6 +589,14 @@
 				minimumVersion = 0.10.0;
 			};
 		};
+		A0F025572DFF1E7E0006204F /* XCRemoteSwiftPackageReference "swiftseventv" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/soyfaii/swiftseventv";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -585,6 +604,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A0DD31522DFC8C81009337BD /* XCRemoteSwiftPackageReference "SwiftCSV" */;
 			productName = SwiftCSV;
+		};
+		A0F025582DFF1E7E0006204F /* SwiftSevenTV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0F025572DFF1E7E0006204F /* XCRemoteSwiftPackageReference "swiftseventv" */;
+			productName = SwiftSevenTV;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

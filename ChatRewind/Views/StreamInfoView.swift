@@ -23,8 +23,6 @@ struct StreamInfoView: View {
             Spacer()
         }
         .padding()
-        .background(.ultraThinMaterial)
-        .border(.ultraThickMaterial, width: 1)
     }
 }
 

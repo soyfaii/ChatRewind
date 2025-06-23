@@ -35,5 +35,9 @@
 			</dict>
 		</dict>
 	</array>
+    <key>TWITCH_CLIENT_ID</key>
+    <string>$(TWITCH_CLIENT_ID)</string>
+    <key>TWITCH_CLIENT_SECRET</key>
+    <string>$(TWITCH_CLIENT_SECRET)</string>
 </dict>
 </plist>

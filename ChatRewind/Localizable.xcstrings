@@ -1,15 +1,7 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "**[%@](link):** %@" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "**[%1$@](link):** %2$@"
-          }
-        }
-      },
+    "**[%@](link):** " : {
       "shouldTranslate" : false
     },
     "Backward.button" : {
@@ -52,6 +44,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mantener en primer plano"
+          }
+        }
+      }
+    },
+    "Loading Emotes…" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cargando emoticonos…"
           }
         }
       }
