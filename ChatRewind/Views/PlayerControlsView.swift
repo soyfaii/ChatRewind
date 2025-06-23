@@ -21,25 +21,26 @@ struct PlayerControlsView: View {
                 Button {
                     currentPlayerPosition -= 10
                 } label: {
-                    Label(String(localized: "Backward.button", defaultValue: "Backward"), systemImage: "backward")
+                    Label(String(localized: "Backward.button", defaultValue: "Backward"), systemImage: "10.arrow.trianglehead.counterclockwise")
                         .labelStyle(.iconOnly)
                 }
                 .controlSize(.large)
                 Button {
                     isPlaying.toggle()
                 } label: {
-                    Label(isPlaying ? String(localized: "Pause.button", defaultValue: "Pause") : String(localized: "Play.button", defaultValue: "Play"), systemImage: isPlaying ? "pause" : "play")
+                    Label(isPlaying ? String(localized: "Pause.button", defaultValue: "Pause") : String(localized: "Play.button", defaultValue: "Play"), systemImage: isPlaying ? "pause.fill" : "play.fill")
                             .labelStyle(.iconOnly)
                 }
                 .controlSize(.large)
                 Button {
                     currentPlayerPosition += 10
                 } label: {
-                    Label(String(localized: "Forward.button", defaultValue: "Forward"), systemImage: "forward")
+                    Label(String(localized: "Forward.button", defaultValue: "Forward"), systemImage: "10.arrow.trianglehead.clockwise")
                         .labelStyle(.iconOnly)
                 }
                 .controlSize(.large)
             }
+            .buttonStyle(.accessoryBar)
             Slider(value: $sliderPosition, in: (0...totalStreamLength)) {} minimumValueLabel: {
                 Text(Duration(secondsComponent: Int64(sliderPosition), attosecondsComponent: 0).formatted())
             } maximumValueLabel: {
