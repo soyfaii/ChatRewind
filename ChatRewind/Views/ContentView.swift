@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {	
     @Environment(Globals.self) private var globals
+    @AppStorage("showSevenTvEmotes") private var showSevenTvEmotes = false
     
     var chatLog: ChatLog
     
@@ -91,12 +92,14 @@ struct ContentView: View {
             
         }
         .task {
-            withAnimation {
-                isLoadingEmotes = true
-            }
-            await SevenTVService.loadEmotes(forChannel: chatLog.channelName ?? "")
-            withAnimation {
-                isLoadingEmotes = false
+            if showSevenTvEmotes {
+                withAnimation {
+                    isLoadingEmotes = true
+                }
+                await SevenTVService.loadEmotes(forChannel: chatLog.channelName ?? "")
+                withAnimation {
+                    isLoadingEmotes = false
+                }
             }
         }
     }

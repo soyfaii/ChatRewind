@@ -33,6 +33,9 @@ struct ChatRewindApp: App {
                 }
             }
         }
+        Settings {
+            SettingsView()
+        }
     }
 }
 

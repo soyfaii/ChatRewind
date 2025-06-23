@@ -92,6 +92,26 @@
         }
       }
     },
+    "Player" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reproductor"
+          }
+        }
+      }
+    },
+    "Show 7TV Emotes" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostrar emoticonos de 7TV"
+          }
+        }
+      }
+    },
     "Show Player Controls" : {
       "localizations" : {
         "es" : {
