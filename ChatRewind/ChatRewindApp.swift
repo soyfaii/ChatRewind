@@ -33,6 +33,7 @@ struct ChatRewindApp: App {
                 }
             }
         }
+        .defaultSize(width: 400, height: 600)
         Settings {
             SettingsView()
         }
