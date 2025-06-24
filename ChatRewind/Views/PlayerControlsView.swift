@@ -19,7 +19,11 @@ struct PlayerControlsView: View {
         VStack {
             HStack {
                 Button {
-                    currentPlayerPosition -= 10
+                    if currentPlayerPosition >= 10 {
+                        currentPlayerPosition -= 10
+                    } else {
+                        currentPlayerPosition = 0
+                    }
                 } label: {
                     Label(String(localized: "Backward.button", defaultValue: "Backward"), systemImage: "10.arrow.trianglehead.counterclockwise")
                         .labelStyle(.iconOnly)
@@ -33,7 +37,11 @@ struct PlayerControlsView: View {
                 }
                 .controlSize(.large)
                 Button {
-                    currentPlayerPosition += 10
+                    if currentPlayerPosition <= (totalStreamLength - 10) {
+                        currentPlayerPosition += 10
+                    } else {
+                        currentPlayerPosition = totalStreamLength
+                    }
                 } label: {
                     Label(String(localized: "Forward.button", defaultValue: "Forward"), systemImage: "10.arrow.trianglehead.clockwise")
                         .labelStyle(.iconOnly)

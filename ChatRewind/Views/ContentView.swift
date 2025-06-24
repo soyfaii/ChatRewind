@@ -15,10 +15,10 @@ struct ContentView: View {
     
     @State private var displayedMessages: [Message] = []
     
+    @State private var referenceDate: Date? = nil
     @State private var currentPosition: TimeInterval = TimeInterval(0)
     
     @State private var isPlaying: Bool = false
-    @State private var timer: Timer? = nil
     
     var streamLength: TimeInterval {
         TimeInterval(chatLog.messages.last?.time ?? 0)
@@ -55,17 +55,8 @@ struct ContentView: View {
                             }
                         }
                     }
-                    .onChange(of: currentPosition, { _, _ in
-                        refreshMessages()
-                    })
-                    .onReceive(Timer.publish(every: 1, on: .main, in: .common).autoconnect()) { _ in
-                        guard isPlaying else { return }
-                        if currentPosition < streamLength {
-                            currentPosition += 1
-                        } else {
-                            isPlaying = false // stop when end is reached
-                        }
-                    }
+                    .onReceive(Timer.publish(every: 1/120, on: .main, in: .common).autoconnect()) { _ in handlePlaybackTick() }
+                    .onChange(of: currentPosition, handlePlayerPositionChange)
                 }
             }
             if globals.showPlayerControls {
@@ -100,6 +91,50 @@ struct ContentView: View {
                 withAnimation {
                     isLoadingEmotes = false
                 }
+            }
+        }
+    }
+    
+    func handlePlaybackTick() {
+        if isPlaying {
+            // The player is now active;
+            // We update the screen
+            if let referenceDate {
+                // The chat log is being played;
+                // We update the current visual position
+                currentPosition = Date.now.timeIntervalSince1970 - referenceDate.timeIntervalSince1970
+                if currentPosition >= streamLength {
+                    // The log arrived to the end;
+                    // We stop the player
+                    isPlaying = false
+                }
+            } else {
+                // The chat log is getting resumed from pause;
+                // We must readjust the reference date
+                referenceDate = .now.addingTimeInterval(-currentPosition)
+            }
+        } else {
+            // The player is paused;
+            // We stop every counting
+            referenceDate = nil
+        }
+    }
+    
+    func handlePlayerPositionChange(_ previousValue: TimeInterval, _ newValue: TimeInterval) {
+        let previousSecond = previousValue.rounded(.down)
+        let currentSecond = newValue.rounded(.down)
+        
+        let isSameSecond = previousSecond == currentSecond
+        let isNextSecond = previousSecond + 1 == currentSecond
+        
+        if !isSameSecond {
+            // The time in the stream changed;
+            // We must refresh the displayed chat
+            refreshMessages()
+            if !isNextSecond {
+                // The change was done by the user; not automatically;
+                // We must adjust the reference date
+                referenceDate = referenceDate?.addingTimeInterval(previousValue - newValue)
             }
         }
     }
