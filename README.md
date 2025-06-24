@@ -40,7 +40,7 @@ I personally hate web apps. And I made this for me. I'm sorry if it doesn't work
 First, if you built the app yourself, you may need to add your Twitch API credentials to the Secrets file.
 
 ```
-// ChatRewind/Secrets.xcconfig
+// ./Secrets.xcconfig
 
 TWITCH_CLIENT_ID = y0urc1i3ntid
 TWITCH_CLIENT_SECRET = y0urcl1ent5ecr3t
