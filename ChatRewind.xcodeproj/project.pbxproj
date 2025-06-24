@@ -10,6 +10,8 @@
 		A061D8642E0992AB00DC9E7D /* Secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A061D8632E0992AB00DC9E7D /* Secrets.xcconfig */; };
 		A0DD31542DFC8C81009337BD /* SwiftCSV in Frameworks */ = {isa = PBXBuildFile; productRef = A0DD31532DFC8C81009337BD /* SwiftCSV */; };
 		A0F025592DFF1E7E0006204F /* SwiftSevenTV in Frameworks */ = {isa = PBXBuildFile; productRef = A0F025582DFF1E7E0006204F /* SwiftSevenTV */; };
+		A0FF75262E0A1BE100CD1379 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A0FF75252E0A1BE100CD1379 /* README.md */; };
+		A0FF75282E0A2C3700CD1379 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = A0FF75272E0A2C3700CD1379 /* LICENSE.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 		A0DD311D2DFC8344009337BD /* ChatRewind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatRewind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0DD312E2DFC8346009337BD /* ChatRewindTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatRewindTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0DD31382DFC8346009337BD /* ChatRewindUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatRewindUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0FF75252E0A1BE100CD1379 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A0FF75272E0A2C3700CD1379 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -97,6 +101,8 @@
 		A0DD31142DFC8344009337BD = {
 			isa = PBXGroup;
 			children = (
+				A0FF75252E0A1BE100CD1379 /* README.md */,
+				A0FF75272E0A2C3700CD1379 /* LICENSE.md */,
 				A061D8632E0992AB00DC9E7D /* Secrets.xcconfig */,
 				A0DD311F2DFC8344009337BD /* ChatRewind */,
 				A0DD31312DFC8346009337BD /* ChatRewindTests */,
@@ -242,6 +248,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0FF75282E0A2C3700CD1379 /* LICENSE.md in Resources */,
+				A0FF75262E0A1BE100CD1379 /* README.md in Resources */,
 				A061D8642E0992AB00DC9E7D /* Secrets.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
