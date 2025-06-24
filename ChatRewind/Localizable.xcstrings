@@ -4,6 +4,12 @@
     "**[%@](link):** " : {
       "shouldTranslate" : false
     },
+    "50" : {
+      "shouldTranslate" : false
+    },
+    "500" : {
+      "shouldTranslate" : false
+    },
     "Backward.button" : {
       "extractionState" : "extracted_with_value",
       "localizations" : {
@@ -54,6 +60,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cargando emoticonos…"
+          }
+        }
+      }
+    },
+    "Maximum displayed messages" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Máximo de mensajes en pantalla"
           }
         }
       }

@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {	
     @Environment(Globals.self) private var globals
     @AppStorage("showSevenTvEmotes") private var showSevenTvEmotes = false
+    @AppStorage("maxDisplayedMessagesCount") private var maxDisplayedMessagesCount = 200
     
     var chatLog: ChatLog
     
@@ -142,7 +143,7 @@ struct ContentView: View {
     func refreshMessages() {
         displayedMessages = chatLog.messages.filter { message in
             message.time <= Int(currentPosition)
-        }.suffix(200)
+        }.suffix(maxDisplayedMessagesCount)
     }
 }
 
