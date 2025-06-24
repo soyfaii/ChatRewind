@@ -17,10 +17,6 @@ Twitch stores streams for *up to 2 weeks* for non-partners and *3 months* for pa
 * [COMING SOON] Download chat logs directly from the app.
 * Also in Spanish.
 
-## Known Issues
-
-* The chat desyncs after some time as the internal clock doesn't count time correctly for some reason (it's a f\*\*\*ing clock, that's the only reason for its existence).
-
 ## FAQ
 
 ### Where do I get the chat logs?
